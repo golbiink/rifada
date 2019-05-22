@@ -112,20 +112,17 @@
                     <div class="col-lg-3">
                         <div class="widget">
                             <h5 class="widgetheading">Kontak Kami</h5>
-                            <img src="<?php echo "$f[folder]/img/tukang-taman-jakarta.png" ?>" width="180" height="60">
                             <?php
                             $main = mysql_query("SELECT * FROM identitas ");
                             while ($t = mysql_fetch_array($main)) {
                                 ?>
                                 <address>
-                                    <strong>CV. Asimetris</strong><br>
+                                    <strong>Rifada Alam Jakarta</strong><br>
                                     Alamat : <?php echo "$t[alamat]" ?><br /></address>
                                 <p>
-                                    <?php echo "$t[no_telp]" ?> <br>
+                                    Telp : <?php echo "$t[no_telp]" ?> <br>
                                     Email : <?php echo "$t[email]" ?><br>
                                     Whatsapp : <?php echo "$t[whatsapp]" ?><br>
-                                    Pin BBM : <?php echo "$t[pin_bb]" ?><br>
-                                    Line : <?php echo "$t[line]" ?>
                                 </p>
                             <?php
                         }
@@ -186,7 +183,7 @@
                         <div class="col-lg-6">
                             <div class="copyright">
                                 <p>
-                                    <span>&copy; Asimetris 2016 All right reserved. By </span><a href="http://asimetris.net" target="_blank">Asimetris</a>
+                                    <span>&copy; Rifada 2019 All right reserved. By </span><a href="https://ww.produksiweb.com" target="_blank">Produksiweb</a>
                                 </p>
                             </div>
                         </div>
