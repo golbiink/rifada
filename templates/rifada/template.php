@@ -10,8 +10,8 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="<?php include "dinatittle1.php"; ?>">
     <meta name="keywords" content="<?php include "dinatittle2.php"; ?>">
-    <meta http-equiv="Copyright" content="Asimetris">
-    <meta name="author" content="Asimetris">
+    <meta http-equiv="Copyright" content="Rifada">
+    <meta name="author" content="Rifada">
     <meta http-equiv="imagetoolbar" content="no">
     <meta name="language" content="Indonesia">
     <meta name="revisit-after" content="7">
@@ -26,6 +26,7 @@
         ?>
         <link rel="shortcut icon" type='image/x-icon' href="<?php echo "$icon[favicon]" ?>" />
     <?php
+
 }
 ?>
     <link href="<?php echo "$f[folder]/skins/default.css" ?>" rel="stylesheet" />
@@ -91,11 +92,10 @@
                        </li>";
                                     } else {
                                         echo "</li>";
-                                        echo " <li><a href='page-20-relasi-asimetris.html' >Relasi</a>
-                    <li><a href='photo-gallery.html' >Portofolio</a>
+                                        echo " 
+                    <li><a href='photo-gallery.html' >Galeri</a>
                     <li><a href='all-news.html' >News</a>
-                    <li><a href='all-events.html' >Events</a>
-                    <li><a href='contact-us.html' >Contact</a>";
+                    <li><a href='contact-us.html' >Kontak</a>";
                                     }
                                 }
                                 ?>
@@ -125,30 +125,62 @@
                                     Whatsapp : <?php echo "$t[whatsapp]" ?><br>
                                 </p>
                             <?php
+
                         }
                         ?>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="widget">
-                            <h5 class="widgetheading">Events</h5>
-                            <ul class="link-list">
-                                <?php
-                                $agenda = mysql_query("SELECT * FROM agenda order by id_agenda DESC limit 5 ");
-                                while ($a = mysql_fetch_array($agenda)) {
-                                    ?>
-                                    <li><a href='<?php echo "event-$a[id_agenda]" ?>-<?php echo "$a[tema_seo]" ?>.html'><?php echo "$a[tema]" ?></a></li>
-                                <?php
-                            }
-                            ?>
-                            </ul>
+                            <h5 class='widgetheading'>Visitors</h5>
+        <ul class='recent'>
+
+          <?php
+            $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+            $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
+            $waktu = time(); // 
+
+          // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
+            $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
+          // Kalau belum ada, simpan data user tersebut ke database
+            if (mysql_num_rows($s) == 0) {
+                mysql_query("INSERT INTO statistik(ip, tanggal, hits, online) VALUES('$ip','$tanggal','1','$waktu')");
+            } else {
+                mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
+            }
+
+            $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+            $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+            $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+            $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $bataswaktu = time() - 300;
+            $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
+
+            $path = "counter/";
+            $ext = ".png";
+
+            $tothitsgbr = sprintf("%06d", $tothitsgbr);
+            for ($i = 0; $i <= 9; $i++) {
+                $tothitsgbr = str_replace($i, "<img src='$path $i $ext' alt='$i'>", $tothitsgbr);
+            }
+
+            echo "<table>
+                    <tr><td class='news-title'><img src=counter/hariini.png> Today </td><td class='news-title'> : $pengunjung </td></tr>
+                    <tr><td class='news-title'><img src=counter/total.png> Total visitor </td><td class='news-title'> : $totalpengunjung </td></tr>
+                    <tr><td class='news-title'><img src=counter/hariini.png> Today hits </td><td class='news-title'> : $hits[hitstoday] </td></tr>
+                    <tr><td class='news-title'><img src=counter/total.png> Total Hits </td><td class='news-title'> : $totalhits </td></tr>
+                    <tr><td class='news-title'><img src=counter/online.png> Online Visitor </td><td class='news-title'> : $pengunjungonline </td></tr>
+                    </table>";
+            ?>
+        </ul>
                         </div>
 
 
                     </div>
                     <div class="col-lg-3">
                         <div class="widget">
-                            <h5 class="widgetheading">Latest posts</h5>
+                            <h5 class="widgetheading">News</h5>
                             <ul class="link-list">
                                 <?php
                                 $berita = mysql_query("SELECT * FROM berita order by id_berita DESC limit 5 ");
@@ -156,6 +188,7 @@
                                     ?>
                                     <li><a href='<?php echo "news-$b[id_berita]" ?>-<?php echo "$b[judul_seo]" ?>.html'><?php echo "$b[judul]" ?></a></li>
                                 <?php
+
                             }
                             ?>
                             </ul>
@@ -163,13 +196,9 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="widget">
-                            <h5 class="widgetheading">Informasi Pembayaran </h5>
+                            <h5 class="widgetheading">Lokasi Kami </h5>
                             <div>
-                                <img src="<?php echo "$f[folder]/img/Logo_Bank_Jatim.jpg" ?>"><br />
-                                BANK JATIM a/n cv asimetris 1731000791<br />
-                                <img src="<?php echo "$f[folder]/img/bank-btn.gif" ?>"><br />
-                                BANK BTN a/n cv asimetris 0000201501416619<br />
-
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.698520932747!2d106.7330769!3d-6.1742972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6208522244d48262!2sRIFADA+ALAM+-+jasa+tukang+taman+jakarta%2C+batu+carport%2C+vertical+garden%2C+lantai+batu+sikat+jakarta.!5e0!3m2!1sen!2sid!4v1558535557770!5m2!1sen!2sid" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                             <div class="clear">
                             </div>
@@ -199,6 +228,7 @@
                                     </li>
                                 </ul>
                             <?php
+
                         }
                         ?>
                         </div>
@@ -222,7 +252,6 @@
     <script src="<?php echo "$f[folder]/js/jquery.flexslider.js" ?>"></script>
     <script src="<?php echo "$f[folder]/js/animate.js" ?>"></script>
     <script src="<?php echo "$f[folder]/js/custom.js" ?>"></script>
-    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=91196077"></script>
 
 </body>
 

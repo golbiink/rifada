@@ -17,7 +17,7 @@ if ($_GET['module'] == 'home') {
               $no = 1;
               while ($t = mysql_fetch_array($berita)) {
 
-                $tgl_posting   = tgl_indo($t['tanggal']);
+                $tgl_posting = tgl_indo($t['tanggal']);
                 $isi_berita = strip_tags($t['isi_berita']); // membuat paragraf pada isi berita dan mengabaikan tag html
                 $isi = substr($isi_berita, 0, 120); // ambil sebanyak 200 karakter
                 $isi = substr($isi_berita, 0, strrpos($isi, " ")); // potong per spasi kalimat
@@ -181,10 +181,11 @@ if ($_GET['module'] == 'home') {
                         <span class="overlay-img-thumb font-icon-plus"></span>
                       </a>
                       <!-- Thumb Image and Description -->
-                      <img src="<?php echo "img_album/$w[gbr_album]" ?>" alt="<?php echo  $w['jdl_album'] ?>">
+                      <img src="<?php echo "img_album/$w[gbr_album]" ?>" alt="<?php echo $w['jdl_album'] ?>">
                     </div>
                   </li>
                 <?php
+
               }
               ?>
                 <!-- End Item Project -->
@@ -197,6 +198,7 @@ if ($_GET['module'] == 'home') {
     </div>
   </section>
 <?php
+
 }
 
 
@@ -220,8 +222,8 @@ elseif ($_GET['module'] == 'halamanstatis') {
       <div class='col-lg-8'>";
   $detail = mysql_query("SELECT * FROM halamanstatis 
                               WHERE id_halaman='$_GET[id]'");
-  $d   = mysql_fetch_array($detail);
-  $tgl_posting   = tgl_indo($d['tgl_posting']);
+  $d = mysql_fetch_array($detail);
+  $tgl_posting = tgl_indo($d['tgl_posting']);
   if ($d['gambar'] != '') {
     echo "<article>
             <div class='post-image'>
@@ -282,9 +284,9 @@ elseif ($_GET['module'] == 'halamanstatis') {
         <ul class='recent'>
 
           <?php
-          $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+          $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
           $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-          $waktu   = time(); // 
+          $waktu = time(); // 
 
           // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
           $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -295,12 +297,12 @@ elseif ($_GET['module'] == 'halamanstatis') {
             mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
           }
 
-          $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-          $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-          $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-          $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $bataswaktu       = time() - 300;
+          $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+          $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+          $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+          $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $bataswaktu = time() - 300;
           $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
           $path = "counter/";
@@ -327,8 +329,8 @@ elseif ($_GET['module'] == 'halamanstatis') {
           <?php
           $main = mysql_query("SELECT * FROM identitas ");
           while ($sosmed = mysql_fetch_array($main))
-            $fb  = $sosmed['facebook'];
-          $tw  = $sosmed['twitter'];
+            $fb = $sosmed['facebook'];
+          $tw = $sosmed['twitter'];
           ?>
           <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
           <script>
@@ -352,6 +354,7 @@ elseif ($_GET['module'] == 'halamanstatis') {
   </div>
   </section>
 <?php
+
 }
 
 
@@ -373,8 +376,8 @@ elseif ($_GET['module'] == 'semuaberita') {
 	<div class='container'>
 		<div class='row'>
 			<div class='col-lg-8'>";
-  $p      = new Paging2;
-  $batas  = 3;
+  $p = new Paging2;
+  $batas = 3;
   $posisi = $p->cariPosisi($batas);
   // Tampilkan semua berita
   $sql = mysql_query("select count(komentar.id_komentar) as jml, judul, judul_seo, jam, 
@@ -414,10 +417,11 @@ elseif ($_GET['module'] == 'semuaberita') {
       </div>
     </article>
   <?php
+
 }
 
-$jmldata     = mysql_num_rows(mysql_query("SELECT * FROM berita"));
-$jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
+$jmldata = mysql_num_rows(mysql_query("SELECT * FROM berita"));
+$jmlhalaman = $p->jumlahHalaman($jmldata, $batas);
 $linkHalaman = $p->navHalaman($_GET['halberita'], $jmlhalaman);
 echo "<div id='pagination'>
 					<span class='all'>$linkHalaman</span>					
@@ -445,9 +449,9 @@ echo "<div id='pagination'>
         <ul class='recent'>
 
           <?php
-          $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+          $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
           $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-          $waktu   = time(); // 
+          $waktu = time(); // 
 
           // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
           $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -458,12 +462,12 @@ echo "<div id='pagination'>
             mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
           }
 
-          $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-          $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-          $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-          $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $bataswaktu       = time() - 300;
+          $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+          $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+          $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+          $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $bataswaktu = time() - 300;
           $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
           $path = "counter/";
@@ -490,8 +494,8 @@ echo "<div id='pagination'>
           <?php
           $main = mysql_query("SELECT * FROM identitas ");
           while ($sosmed = mysql_fetch_array($main))
-            $fb  = $sosmed['facebook'];
-          $tw  = $sosmed['twitter'];
+            $fb = $sosmed['facebook'];
+          $tw = $sosmed['twitter'];
           ?>
           <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
           <script>
@@ -514,13 +518,14 @@ echo "<div id='pagination'>
   </div>
   </section>
 <?php
+
 } elseif ($_GET['module'] == 'detailberita') {
 
   $detail = mysql_query("SELECT * FROM berita,users,kategori    
                       WHERE users.username=berita.username 
                       AND kategori.id_kategori=berita.id_kategori 
                       AND id_berita='$_GET[id]'");
-  $d   = mysql_fetch_array($detail);
+  $d = mysql_fetch_array($detail);
   $tgl = tgl_indo($d['tanggal']);
   $baca = $d['dibaca'] + 1;
   ?>
@@ -581,9 +586,9 @@ echo "<div id='pagination'>
               <ul class='recent'>
 
                 <?php
-                $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+                $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
                 $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-                $waktu   = time(); // 
+                $waktu = time(); // 
 
                 // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
                 $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -594,12 +599,12 @@ echo "<div id='pagination'>
                   mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
                 }
 
-                $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-                $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-                $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-                $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-                $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-                $bataswaktu       = time() - 300;
+                $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+                $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+                $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+                $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+                $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+                $bataswaktu = time() - 300;
                 $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
                 $path = "counter/";
@@ -626,8 +631,8 @@ echo "<div id='pagination'>
                 <?php
                 $main = mysql_query("SELECT * FROM identitas ");
                 while ($sosmed = mysql_fetch_array($main))
-                  $fb  = $sosmed['facebook'];
-                $tw  = $sosmed['twitter'];
+                  $fb = $sosmed['facebook'];
+                $tw = $sosmed['twitter'];
                 ?>
                 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
                 <script>
@@ -650,6 +655,7 @@ echo "<div id='pagination'>
     </div>
   </section>
 <?php
+
 }
 
 // Modul detail kategori
@@ -673,11 +679,11 @@ elseif ($_GET['module'] == 'detailkategori') {
 	<div class='container'>
 		<div class='row'>
 			<div class='col-lg-8'>";
-  $p      = new Paging3;
-  $batas  = 3;
+  $p = new Paging3;
+  $batas = 3;
   $posisi = $p->cariPosisi($batas);
   // Tampilkan daftar berita sesuai dengan kategori yang dipilih
-  $sql   = "SELECT * FROM berita WHERE id_kategori='$_GET[id]' 
+  $sql = "SELECT * FROM berita WHERE id_kategori='$_GET[id]' 
             ORDER BY id_berita DESC LIMIT $posisi,$batas";
 
   $hasil = mysql_query($sql);
@@ -715,10 +721,11 @@ elseif ($_GET['module'] == 'detailkategori') {
         </div>
       </article>
     <?php
+
   }
 
-  $jmldata     = mysql_num_rows(mysql_query("SELECT * FROM berita WHERE id_kategori='$_GET[id]'"));
-  $jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
+  $jmldata = mysql_num_rows(mysql_query("SELECT * FROM berita WHERE id_kategori='$_GET[id]'"));
+  $jmlhalaman = $p->jumlahHalaman($jmldata, $batas);
   $linkHalaman = $p->navHalaman($_GET['halkategori'], $jmlhalaman);
   echo "<div id='pagination'>
 					<span class='all'>$linkHalaman</span>					
@@ -746,9 +753,9 @@ elseif ($_GET['module'] == 'detailkategori') {
           <ul class='recent'>
 
             <?php
-            $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+            $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
             $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-            $waktu   = time(); // 
+            $waktu = time(); // 
 
             // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
             $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -759,12 +766,12 @@ elseif ($_GET['module'] == 'detailkategori') {
               mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
             }
 
-            $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-            $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-            $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-            $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-            $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-            $bataswaktu       = time() - 300;
+            $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+            $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+            $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+            $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $bataswaktu = time() - 300;
             $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
             $path = "counter/";
@@ -791,8 +798,8 @@ elseif ($_GET['module'] == 'detailkategori') {
             <?php
             $main = mysql_query("SELECT * FROM identitas ");
             while ($sosmed = mysql_fetch_array($main))
-              $fb  = $sosmed['facebook'];
-            $tw  = $sosmed['twitter'];
+              $fb = $sosmed['facebook'];
+            $tw = $sosmed['twitter'];
             ?>
             <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
             <script>
@@ -815,6 +822,7 @@ elseif ($_GET['module'] == 'detailkategori') {
     </div>
     </section>
   <?php
+
 } else {
   echo "<h1>Belum ada Berita Pada Kategori ini</h1>";
   ?>
@@ -837,9 +845,9 @@ elseif ($_GET['module'] == 'detailkategori') {
           <ul class='recent'>
 
             <?php
-            $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+            $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
             $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-            $waktu   = time(); // 
+            $waktu = time(); // 
 
             // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
             $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -850,12 +858,12 @@ elseif ($_GET['module'] == 'detailkategori') {
               mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
             }
 
-            $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-            $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-            $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-            $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-            $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-            $bataswaktu       = time() - 300;
+            $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+            $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+            $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+            $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+            $bataswaktu = time() - 300;
             $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
             $path = "counter/";
@@ -882,8 +890,8 @@ elseif ($_GET['module'] == 'detailkategori') {
             <?php
             $main = mysql_query("SELECT * FROM identitas ");
             while ($sosmed = mysql_fetch_array($main))
-              $fb  = $sosmed['facebook'];
-            $tw  = $sosmed['twitter'];
+              $fb = $sosmed['facebook'];
+            $tw = $sosmed['twitter'];
             ?>
             <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
             <script>
@@ -906,6 +914,7 @@ elseif ($_GET['module'] == 'detailkategori') {
     </div>
     </section>
   <?php
+
 }
 }
 
@@ -928,8 +937,8 @@ elseif ($_GET['module'] == 'semuaagenda') {
 	<div class='container'>
 		<div class='row'>
 			<div class='col-lg-8'>";
-  $p      = new Paging4;
-  $batas  = 3;
+  $p = new Paging4;
+  $batas = 3;
   $posisi = $p->cariPosisi($batas);
   // Tampilkan semua agenda
   $sql = mysql_query("SELECT * FROM agenda  
@@ -939,9 +948,9 @@ elseif ($_GET['module'] == 'semuaagenda') {
     $dtgl = date("d", strtotime($tgl));
     $mytgl = date("m.y", strtotime($tgl));
 
-    $tgl_mulai   = tgl_indo($r['tgl_mulai']);
+    $tgl_mulai = tgl_indo($r['tgl_mulai']);
     $tgl_selesai = tgl_indo($r['tgl_selesai']);
-    $isi_agenda  = nl2br($r['isi_agenda']);
+    $isi_agenda = nl2br($r['isi_agenda']);
 
     ?>
 
@@ -968,7 +977,7 @@ elseif ($_GET['module'] == 'semuaagenda') {
             <td><b>Place </b></td>
           </tr>
           <tr>
-            <td> <?php echo  $r['tempat'] ?> </td>
+            <td> <?php echo $r['tempat'] ?> </td>
           </tr>
         </table><br />
 
@@ -984,10 +993,11 @@ elseif ($_GET['module'] == 'semuaagenda') {
       </div>
     </article>
   <?php
+
 }
 
-$jmldata     = mysql_num_rows(mysql_query("SELECT * FROM agenda"));
-$jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
+$jmldata = mysql_num_rows(mysql_query("SELECT * FROM agenda"));
+$jmlhalaman = $p->jumlahHalaman($jmldata, $batas);
 $linkHalaman = $p->navHalaman($_GET['halagenda'], $jmlhalaman);
 echo "<div id='pagination'>
 					<span class='all'>$linkHalaman</span>					
@@ -1015,9 +1025,9 @@ echo "<div id='pagination'>
         <ul class='recent'>
 
           <?php
-          $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+          $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
           $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-          $waktu   = time(); // 
+          $waktu = time(); // 
 
           // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
           $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -1028,12 +1038,12 @@ echo "<div id='pagination'>
             mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
           }
 
-          $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-          $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-          $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-          $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-          $bataswaktu       = time() - 300;
+          $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+          $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+          $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+          $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+          $bataswaktu = time() - 300;
           $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
           $path = "counter/";
@@ -1060,8 +1070,8 @@ echo "<div id='pagination'>
           <?php
           $main = mysql_query("SELECT * FROM identitas ");
           while ($sosmed = mysql_fetch_array($main))
-            $fb  = $sosmed['facebook'];
-          $tw  = $sosmed['twitter'];
+            $fb = $sosmed['facebook'];
+          $tw = $sosmed['twitter'];
           ?>
           <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
           <script>
@@ -1084,20 +1094,21 @@ echo "<div id='pagination'>
   </div>
   </section>
 <?php
+
 } elseif ($_GET['module'] == 'detailagenda') {
 
   $event = mysql_query("SELECT * FROM agenda,users 
 						WHERE users.username=agenda.username 
 						AND id_agenda='$_GET[id]'");
-  $e   = mysql_fetch_array($event);
+  $e = mysql_fetch_array($event);
   $tgl = tgl_indo($e['tanggal']);
   $tgl_posting = tgl_indo($e['tgl_posting']);
   $dtgl = date("d", strtotime($tgl_posting));
   $mytgl = date("m.y", strtotime($tgl_posting));
 
-  $tgl_mulai   = tgl_indo($e['tgl_mulai']);
+  $tgl_mulai = tgl_indo($e['tgl_mulai']);
   $tgl_selesai = tgl_indo($e['tgl_selesai']);
-  $isi_agenda  = nl2br($e['isi_agenda']);
+  $isi_agenda = nl2br($e['isi_agenda']);
   ?>
   <section id='inner-headline'>
     <div class='container'>
@@ -1138,7 +1149,7 @@ echo "<div id='pagination'>
                   <td><b>Place </b></td>
                 </tr>
                 <tr>
-                  <td> <?php echo  $e['tempat'] ?> </td>
+                  <td> <?php echo $e['tempat'] ?> </td>
                 </tr>
               </table><br />
 
@@ -1179,9 +1190,9 @@ echo "<div id='pagination'>
               <ul class='recent'>
 
                 <?php
-                $ip      = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
+                $ip = $_SERVER['REMOTE_ADDR']; // Mendapatkan IP komputer user
                 $tanggal = date("Ymd"); // Mendapatkan tanggal sekarang
-                $waktu   = time(); // 
+                $waktu = time(); // 
 
                 // Mencek berdasarkan IPnya, apakah user sudah pernah mengakses hari ini 
                 $s = mysql_query("SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
@@ -1192,12 +1203,12 @@ echo "<div id='pagination'>
                   mysql_query("UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
                 }
 
-                $pengunjung       = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
-                $totalpengunjung  = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
-                $hits             = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
-                $totalhits        = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-                $tothitsgbr       = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
-                $bataswaktu       = time() - 300;
+                $pengunjung = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE tanggal='$tanggal' GROUP BY ip"));
+                $totalpengunjung = mysql_result(mysql_query("SELECT COUNT(hits) FROM statistik"), 0);
+                $hits = mysql_fetch_assoc(mysql_query("SELECT SUM(hits) as hitstoday FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal"));
+                $totalhits = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+                $tothitsgbr = mysql_result(mysql_query("SELECT SUM(hits) FROM statistik"), 0);
+                $bataswaktu = time() - 300;
                 $pengunjungonline = mysql_num_rows(mysql_query("SELECT * FROM statistik WHERE online > '$bataswaktu'"));
 
                 $path = "counter/";
@@ -1224,8 +1235,8 @@ echo "<div id='pagination'>
                 <?php
                 $main = mysql_query("SELECT * FROM identitas ");
                 while ($sosmed = mysql_fetch_array($main))
-                  $fb  = $sosmed['facebook'];
-                $tw  = $sosmed['twitter'];
+                  $fb = $sosmed['facebook'];
+                $tw = $sosmed['twitter'];
                 ?>
                 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
                 <script>
@@ -1248,6 +1259,7 @@ echo "<div id='pagination'>
     </div>
   </section>
 <?php
+
 }
 
 // Modul semua album
@@ -1315,7 +1327,8 @@ elseif ($_GET['module'] == 'semuaalbum') {
   </section>";
 
   ?>
-<?php }
+<?php 
+}
 
 // Modul detail album
 elseif ($_GET['module'] == 'detailalbum') {
@@ -1343,8 +1356,8 @@ elseif ($_GET['module'] == 'detailalbum') {
           <ul id='thumbs' class='portfolio'>";
 
 
-  $p      = new Paging6;
-  $batas  = 12;
+  $p = new Paging6;
+  $batas = 12;
   $posisi = $p->cariPosisi($batas);
 
   // Tentukan kolom
@@ -1385,7 +1398,8 @@ elseif ($_GET['module'] == 'detailalbum') {
   </section>";
 
     ?>
-  <?php }
+  <?php 
+}
 }
 
 
@@ -1407,7 +1421,7 @@ elseif ($_GET['module'] == 'hubungikami') {
   </section>
   <section id="content">
     <div class="map">
-      <iframe src="https://www.google.com/maps/d/u/1/embed?mid=zog1dIjFAJNg.k11Ny8Tm7Hko" width="640" height="480"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.698520932747!2d106.7330769!3d-6.1742972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6208522244d48262!2sRIFADA+ALAM+-+jasa+tukang+taman+jakarta%2C+batu+carport%2C+vertical+garden%2C+lantai+batu+sikat+jakarta.!5e0!3m2!1sen!2sid!4v1558535557770!5m2!1sen!2sid" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="container">
       <div class="row">
@@ -1419,14 +1433,15 @@ elseif ($_GET['module'] == 'hubungikami') {
           while ($t = mysql_fetch_array($main)) {
             ?>
             <address>
-              <strong>CV. Asimetris</strong><br>
+              <strong>Rifada Alam Jakarta</strong><br>
               <h5> Alamat : <?php echo "$t[alamat]" ?></h5>
             </address>
 
-            <h5><?php echo "$t[no_telp]" ?> </h5>
-            <h5><?php echo "$t[email]" ?></h5>
+            <h5>Telp/WA : <?php echo "$t[no_telp]" ?> </h5>
+            <h5>Email : <?php echo "$t[email]" ?></h5>
             <br />
           <?php
+
         }
         ?>
 

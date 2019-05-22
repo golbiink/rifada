@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 4.0.9
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: May 22, 2019 at 05:51 AM
--- Server version: 10.1.9-MariaDB
--- PHP Version: 5.6.15
+-- Host: localhost
+-- Generation Time: May 22, 2019 at 05:08 PM
+-- Server version: 5.6.14
+-- PHP Version: 5.5.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `rifada`
@@ -26,8 +26,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `agenda`
 --
 
-CREATE TABLE `agenda` (
-  `id_agenda` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `agenda` (
+  `id_agenda` int(5) NOT NULL AUTO_INCREMENT,
   `tema` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `tema_seo` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `isi_agenda` text COLLATE latin1_general_ci NOT NULL,
@@ -39,8 +39,9 @@ CREATE TABLE `agenda` (
   `jam` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `username` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `gambar` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `google_maps` text COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `google_maps` text COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_agenda`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `agenda`
@@ -57,37 +58,14 @@ INSERT INTO `agenda` (`id_agenda`, `tema`, `tema_seo`, `isi_agenda`, `tempat`, `
 -- Table structure for table `album`
 --
 
-CREATE TABLE `album` (
-  `id_album` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `album` (
+  `id_album` int(5) NOT NULL AUTO_INCREMENT,
   `jdl_album` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `album_seo` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `gbr_album` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
-
---
--- Dumping data for table `album`
---
-
-INSERT INTO `album` (`id_album`, `jdl_album`, `album_seo`, `gbr_album`, `aktif`) VALUES
-(29, 'Griyo Taman Asri ', 'griyo-taman-asri-', '66253griyo-taman-asri.jpg', 'Y'),
-(28, 'indovision galery', 'indovision-galery', '793853indovision galery1.jpg', 'Y'),
-(26, 'Grand opening KIM nganjuk', 'grand-opening-kim-nganjuk', '4638Grand opening KIM nganjuk 2015 1 .JPG', 'Y'),
-(30, 'Badan Penanaman Modal', 'badan-penanaman-modal', '592773badan-penanaman-modal-dan-perizinan.jpg', 'Y'),
-(31, 'Desain Interior', 'desain-interior', '784295interior1.jpg', 'Y'),
-(32, 'Delta Sari Baru', 'delta-sari-baru', '213749deltasari.jpg', 'Y'),
-(33, 'booth Sunrise Garden', 'booth-sunrise-garden', '279771sunrise.jpg', 'Y'),
-(34, 'Booth Midea', 'booth-midea', '73664midea1.jpg', 'Y'),
-(36, 'Desain Eksterior', 'desain-eksterior', '168423eksterior4.jpg', 'Y'),
-(42, 'Badan Penanaman Modal Kabupaten Gresik', 'badan-penanaman-modal-kabupaten-gresik', '156958badan penanaman modal gresik.jpg', 'Y'),
-(43, 'PJB Gresik', 'pjb-gresik', '399026pjb.jpg', 'Y'),
-(44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby', '773023festivalbudayagc2016.jpg', 'Y'),
-(45, 'Koperasi UMKM Jatim Expo', 'koperasi-umkm-jatim-expo', '477839umkm1.jpg', 'Y'),
-(46, 'Portofolio Asimetris', 'portofolio-asimetris', '282296sewabooth1.jpeg', 'Y'),
-(47, 'Jasa Pembuatan Booth', 'jasa-pembuatan-booth', '703083sewabooth2.jpeg', 'Y'),
-(48, 'Sewa Booth', 'sewa-booth', '930323sewabooth3.jpeg', 'Y'),
-(49, 'Sewa Stand', 'sewa-stand', '191533sewabooth6.jpeg', 'Y'),
-(50, 'Spesialis Pembuatan Booth Surabaya', 'spesialis-pembuatan-booth-surabaya', '435644sewabooth5.jpeg', 'Y');
+  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_album`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=51 ;
 
 -- --------------------------------------------------------
 
@@ -95,13 +73,14 @@ INSERT INTO `album` (`id_album`, `jdl_album`, `album_seo`, `gbr_album`, `aktif`)
 -- Table structure for table `banner`
 --
 
-CREATE TABLE `banner` (
-  `id_banner` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `banner` (
+  `id_banner` int(5) NOT NULL AUTO_INCREMENT,
   `judul` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `url` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `gambar` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `tgl_posting` date NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `tgl_posting` date NOT NULL,
+  PRIMARY KEY (`id_banner`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `banner`
@@ -116,8 +95,8 @@ INSERT INTO `banner` (`id_banner`, `judul`, `url`, `gambar`, `tgl_posting`) VALU
 -- Table structure for table `berita`
 --
 
-CREATE TABLE `berita` (
-  `id_berita` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `berita` (
+  `id_berita` int(5) NOT NULL AUTO_INCREMENT,
   `id_kategori` int(5) NOT NULL,
   `username` varchar(30) COLLATE latin1_general_ci NOT NULL,
   `judul` varchar(100) COLLATE latin1_general_ci NOT NULL,
@@ -129,8 +108,16 @@ CREATE TABLE `berita` (
   `jam` time NOT NULL,
   `gambar` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `dibaca` int(5) NOT NULL DEFAULT '1',
-  `tag` varchar(100) COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `tag` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_berita`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=140 ;
+
+--
+-- Dumping data for table `berita`
+--
+
+INSERT INTO `berita` (`id_berita`, `id_kategori`, `username`, `judul`, `judul_seo`, `headline`, `isi_berita`, `hari`, `tanggal`, `jam`, `gambar`, `dibaca`, `tag`) VALUES
+(139, 32, 'admin', 'Tukang Taman Jakarta', 'tukang-taman-jakarta', 'Y', '<div class="entry-head">\r\n<div class="entry-footer"><a href="https://www.rifadaalamjakarta.com/"><strong>Rifada</strong></a>&nbsp;&ndash; Anda ingin menghias rumah anda dengan taman agar rumah tampak lebih cantik, dan anda sedang bingung butuh tukang taman untuk di area jakarta dan sekitarnya?</div>\r\n</div>\r\n<div class="content-wrap">\r\n<div class="content-wrap-inner">\r\n<div class="entry-content">\r\n<h2>Tukang Taman Jakarta</h2>\r\n<p>Selamat Anda telah menemukan kami, Rifada Alam Jakarta adalah Jasa Tukang Taman &nbsp;di Jakarta.</p>\r\n<p>kami melayani pembuatan dan mendesain Taman Kering bisa sesuai dengan permintaan anda dan kami sesuaikan dengan desain taman yang bagus.</p>\r\n<p>Biasanya untuk&nbsp;<a href="https://www.rifadaalamjakarta.com/category/tukang-taman-jakarta/">taman rumah,</a>&nbsp;taman hotel, taman tempat rekreasi, bahkan taman bermain umum. Untuk info selengkapnya silahkan hubungi kami di :</p>\r\n<p><strong>Telp :&nbsp;<a href="tel:082230564685">082230564685</a></strong></p>\r\n<p>Whatsapp :&nbsp;<a href="https://wa.me/6282230564685">082230564685</a></p>\r\n<p><strong>Alamat : Jl. Raya Kembangan Utara No. 57 Jakarta</strong></p>\r\n</div>\r\n</div>\r\n</div>', 'Rabu', '2019-05-22', '21:15:25', '98tukangtamanjakarta2.jpg', 1, '');
 
 -- --------------------------------------------------------
 
@@ -138,13 +125,14 @@ CREATE TABLE `berita` (
 -- Table structure for table `download`
 --
 
-CREATE TABLE `download` (
-  `id_download` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `download` (
+  `id_download` int(5) NOT NULL AUTO_INCREMENT,
   `judul` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `nama_file` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `tgl_posting` date NOT NULL,
-  `hits` int(3) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `hits` int(3) NOT NULL,
+  PRIMARY KEY (`id_download`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `download`
@@ -163,82 +151,23 @@ INSERT INTO `download` (`id_download`, `judul`, `nama_file`, `tgl_posting`, `hit
 -- Table structure for table `gallery`
 --
 
-CREATE TABLE `gallery` (
-  `id_gallery` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `id_gallery` int(5) NOT NULL AUTO_INCREMENT,
   `id_album` int(5) NOT NULL,
   `jdl_gallery` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `gallery_seo` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `keterangan` text COLLATE latin1_general_ci NOT NULL,
-  `gbr_gallery` varchar(100) COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `gbr_gallery` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_gallery`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=118 ;
 
 --
 -- Dumping data for table `gallery`
 --
 
 INSERT INTO `gallery` (`id_gallery`, `id_album`, `jdl_gallery`, `gallery_seo`, `keterangan`, `gbr_gallery`) VALUES
-(56, 28, 'indovision galery', 'indovision-galery', '', '420989Stage Grand opening INDOVISION  di atrium pakuwon  supermall surabaya.jpg'),
-(55, 28, 'indovision galery', 'indovision-galery', '', '578674indovision galery2.jpg'),
-(54, 26, 'Grand opening KIM nganjuk 2015 1 ', 'grand-opening-kim-nganjuk-2015-1-', '', '537780booth KOMINFO PROV.JATIM di event KIM nganjuk 2015.jpg'),
-(53, 26, 'Grand opening KIM nganjuk 2015', 'grand-opening-kim-nganjuk-2015', '', '507354Grand opening KIM nganjuk 2015.JPG'),
-(57, 31, 'Desain Interior', 'desain-interior', '', '4327interior4.jpg'),
-(58, 31, 'Desain Interior', 'desain-interior', '', '467492interior1.jpg'),
-(59, 31, 'Desain Interior Kamar', 'desain-interior-kamar', '', '702922interior5.jpg'),
-(60, 31, 'Desain Interior', 'desain-interior', '', '961240interior6.jpg'),
-(61, 31, 'Desain Interior', 'desain-interior', '', '950210interior9.jpg'),
-(62, 31, 'Desain Interior', 'desain-interior', '', '809520interior2.jpg'),
-(63, 31, 'Desain Interior', 'desain-interior', '', '240725interior3.jpg'),
-(64, 31, 'Desain Interior', 'desain-interior', '', '741507interior7.jpg'),
-(65, 31, 'Desain Interior', 'desain-interior', '', '45410interior8.jpg'),
-(66, 32, 'Delta Sari Baru', 'delta-sari-baru', '', '383456deltasari2.jpg'),
-(67, 32, 'Delta Sari Baru', 'delta-sari-baru', '', '257762deltasari3.jpg'),
-(68, 32, 'Delta Sari Baru', 'delta-sari-baru', '', '122086deltasari4.jpg'),
-(69, 32, 'Delta Sari Baru', 'delta-sari-baru', '', '300156deltasari.jpg'),
-(70, 33, 'Sunrise Garden', 'sunrise-garden', '', '286728sunrise.jpg'),
-(71, 33, 'Sunrise Garden', 'sunrise-garden', '', '811319sunrise2.jpg'),
-(72, 33, 'Sunrise Garden', 'sunrise-garden', '', '357056sunrise3.jpg'),
-(73, 33, 'Sunrise Garden', 'sunrise-garden', '', '675460sunrise4.jpg'),
-(74, 34, 'Booth Midea', 'booth-midea', '', '989705midea2.jpg'),
-(75, 34, 'Booth Midea', 'booth-midea', '', '288832midea3.jpg'),
-(76, 34, 'Booth Midea', 'booth-midea', '', '104652midea4.jpg'),
-(77, 34, 'Booth Midea', 'booth-midea', '', '74394midea1.jpg'),
-(78, 30, 'Badan Penanaman Modal', 'badan-penanaman-modal', '', '397619modal1.jpg'),
-(79, 30, 'Badan Penanaman Modal', 'badan-penanaman-modal', '', '278302modal2.jpg'),
-(80, 30, 'Badan Penanaman Modal', 'badan-penanaman-modal', '', '244197modal3.jpg'),
-(82, 36, 'Desain Eksterior', 'desain-eksterior', '', '99768eksterior2.jpg'),
-(83, 36, 'Desain Eksterior', 'desain-eksterior', '', '452515eksterior3.jpg'),
-(84, 36, 'Desain Eksterior', 'desain-eksterior', '', '597272eksterior4.jpg'),
-(88, 36, 'Desain Eksterior', 'desain-eksterior', '', '387199eksterior6.jpg'),
-(89, 36, 'Desain Eksterior', 'desain-eksterior', '', '830423eksterior7.jpg'),
-(87, 36, 'Desain Eksterior', 'desain-eksterior', '', '47196eksterior5.jpg'),
-(90, 36, 'Desain Eksterior', 'desain-eksterior', '', '998007eksterior8.jpg'),
 (91, 37, 'Badan Penanaman Modal Gresik1', 'badan-penanaman-modal-gresik1', '', '714079IMG-20161101-WA0002.jpg'),
-(92, 37, 'Badan Penanaman Modal Gresik2', 'badan-penanaman-modal-gresik2', '', '111598IMG-20161101-WA0000.jpg'),
-(93, 42, 'Badan Penanaman Modal Gresik1', 'badan-penanaman-modal-gresik1', '', '245772badan penanaman modal gresik.jpg'),
-(94, 42, 'Badan Penanaman Modal Gresik2', 'badan-penanaman-modal-gresik2', '', '516275badan penanaman modal gresik1.jpg'),
-(95, 43, 'PJB Gresik', 'pjb-gresik', '', '534896pjb.jpg'),
-(96, 43, 'PJB Gresik1', 'pjb-gresik1', '', '579785pjb-gresik.jpg'),
-(97, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby', '', '884656festivalbudayagc20161.jpg'),
-(98, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 1', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-1', '', '432787festivalbudayagc20162.jpg'),
-(99, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 2', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-2', '', '810543festivalbudayagc20163.jpg'),
-(100, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 3', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-3', '', '285986festivalbudayagc20164.jpg'),
-(101, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 4', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-4', '', '666130festivalbudayagc20165.jpg'),
-(102, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 5', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-5', '', '146854festivalbudayagc20166.jpg'),
-(103, 44, 'Festival budaya & ekonomi kreatif 2016 grand city mall sby 6', 'festival-budaya--ekonomi-kreatif-2016-grand-city-mall-sby-6', '', '837421festivalbudayagc2016.jpg'),
-(104, 45, 'Koperasi UMKM Jatim Expo', 'koperasi-umkm-jatim-expo', '', '465973umkm1.jpg'),
-(105, 45, 'Koperasi UMKM Jatim Expo 2', 'koperasi-umkm-jatim-expo-2', '', '161089umkm2.jpg'),
-(106, 46, 'Portofolio Asimetris', 'portofolio-asimetris', '', '837786asimetris6.jpg'),
-(107, 46, 'Booth Krisbow', 'booth-krisbow', '', '735333sewabooth1.jpeg'),
-(108, 47, 'Jasa Pembuatan Booth', 'jasa-pembuatan-booth', '', '161520sewabooth2.jpeg'),
-(109, 50, 'Jasa Pembuatan Booth', 'jasa-pembuatan-booth', '', '549236sewabooth2.jpeg'),
-(110, 49, 'Jasa Sewa Stand Surabaya dan Sekitarnya', 'jasa-sewa-stand-surabaya-dan-sekitarnya', '', '364433sewabooth7.jpeg'),
-(111, 49, 'Jasa Sewa Stand Surabaya dan Sekitarnya', 'jasa-sewa-stand-surabaya-dan-sekitarnya', '', '480418sewabooth8.jpeg'),
-(112, 49, 'Sewa Stand Surabaya', 'sewa-stand-surabaya', '', '147634sewabooth9.jpeg'),
-(113, 49, 'Jasa Pembuatan Booth', 'jasa-pembuatan-booth', '', '921637sewabooth4.jpeg'),
-(114, 48, 'Jasa Pembuatan Booth', 'jasa-pembuatan-booth', '', '788490sewabooth11.jpeg'),
-(115, 50, 'Jasa Pembuatan Booth Surabaya', 'jasa-pembuatan-booth-surabaya', '', '887282sewabooth13.jpeg'),
-(116, 50, 'Jasa Pembuatan Booth Surabaya', 'jasa-pembuatan-booth-surabaya', '', '947420sewabooth15.jpeg'),
-(117, 50, 'Jasa Pembuatan Booth Surabaya', 'jasa-pembuatan-booth-surabaya', '', '809758sewabooth17.jpeg');
+(92, 37, 'Badan Penanaman Modal Gresik2', 'badan-penanaman-modal-gresik2', '', '111598IMG-20161101-WA0000.jpg');
 
 -- --------------------------------------------------------
 
@@ -246,14 +175,15 @@ INSERT INTO `gallery` (`id_gallery`, `id_album`, `jdl_gallery`, `gallery_seo`, `
 -- Table structure for table `halamanstatis`
 --
 
-CREATE TABLE `halamanstatis` (
-  `id_halaman` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `halamanstatis` (
+  `id_halaman` int(5) NOT NULL AUTO_INCREMENT,
   `judul` varchar(100) NOT NULL,
   `judul_seo` varchar(100) NOT NULL,
   `isi_halaman` text NOT NULL,
   `tgl_posting` date NOT NULL,
-  `gambar` varchar(100) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `gambar` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_halaman`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `halamanstatis`
@@ -266,7 +196,10 @@ INSERT INTO `halamanstatis` (`id_halaman`, `judul`, `judul_seo`, `isi_halaman`, 
 (26, 'Desain Eksterior', 'desain-eksterior', '<p><span>Kami Menerima Jasa Desain Eksterior Rumah, Gedung, dll.</span></p>\r\n<p><span>&nbsp;</span></p>\r\n<p><span><img src="../img_galeri/998007eksterior8.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/830423eksterior7.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/387199eksterior6.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/47196eksterior5.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/597272eksterior4.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/452515eksterior3.jpg" alt="" width="484" height="305" /></span></p>\r\n<p><span><img src="../img_galeri/99768eksterior2.jpg" alt="" width="484" height="305" /></span></p>', '2016-04-10', ''),
 (22, 'Vision dan Mission', 'vision-dan-mission', '<p><strong>Vision</strong></p>\r\n<p>To Bring the good name of CV. ASIMETRIS as a local exibithion contractors which i know as the best in its field both in national and international level by producing product and services that are innovative, creative and be a trendsetter also recognized in the field of exibithion.</p>\r\n<p><strong>Mission</strong></p>\r\n<p>Creating professional branch offices and workshop in indonesia and international with a strong character team work, open, modern, unconventional, daring, to innovate and have high integrity in order to produce the best product and service that meet the needs of market and customer.</p>\r\n<p>&nbsp;</p>\r\n<p><img src="../kcfinder/upload/image/sisi%20balik%202.jpg" alt="" width="707" height="500" /></p>', '2016-04-10', ''),
 (20, 'Relasi Asimetris', 'relasi-asimetris', '<div id="yui_3_16_0_ym19_1_1459908727914_5870"><strong>1. PT. ECMI INDONESIA&nbsp;</strong></div>\r\n<div><strong>&nbsp;</strong></div>\r\n<div><img src="../kcfinder/upload/image/ECMI.png" alt="" width="136" height="78" /></div>\r\n<div>&nbsp;</div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6055" dir="ltr"><strong>2. PT. GRAHA DAMAI PUTRA GROUP&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong><img src="../kcfinder/upload/image/dpg-logo.png" alt="" width="225" height="77" /></strong></div>\r\n<div dir="ltr">&nbsp;</div>\r\n<div dir="ltr"><strong>3. Taman Pondok Jati</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong><img src="../kcfinder/upload/image/logo-taman-pondok-jati.png" alt="" width="163" height="77" /></strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr">&nbsp;</div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6193" dir="ltr"><strong>4. PT. ADHI KARYA GROUP SURABAYA</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong><strong><strong><img src="../kcfinder/upload/image/ADHI%20PERSADA.gif" alt="" width="221" height="77" /></strong></strong></strong></div>\r\n<div dir="ltr"><strong><strong>&nbsp;</strong></strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>5. DEBINDO MITRATAMA SURABAYA</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong><img src="../kcfinder/upload/image/DEBINDO.jpg" alt="" width="114" height="77" /></strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6230" dir="ltr"><strong>6. CITRA PAMERINDO ABADI</strong></div>\r\n<div dir="ltr"><strong><img src="../kcfinder/upload/image/logo%20cpa%20blog.jpg" alt="" width="113" height="77" /></strong></div>\r\n<div dir="ltr">&nbsp;</div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6505" dir="ltr">\r\n<p><strong>7. </strong><strong>PT. KARYA MAKMUR</strong></p>\r\n<p><strong><img src="../kcfinder/upload/image/karyamkmr.jpg" alt="" width="87" height="77" /></strong></p>\r\n<p><strong>8. <strong>PT. PANCA TEJA SENTJANA</strong><br /></strong></p>\r\n<strong>9. DINAS KOMINFO PROV. JATIM</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>10. KABUPATEN SIDOARJO</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6570" dir="ltr"><strong>11. KABUPATEN GRESIK</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6571" dir="ltr"><strong>12. KABUPATEN SUMENEP</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6572" dir="ltr"><strong>13. KABUPATEN TULUNGAGUNG</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6573" dir="ltr"><strong>14. PEMERINTAH KOTA BATU</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div id="yui_3_16_0_ym19_1_1459908727914_6574" dir="ltr"><strong>15. PEMERINTAH KOTA MALANG</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>\r\n<div dir="ltr"><strong>&nbsp;</strong></div>', '2016-04-10', ''),
-(21, 'About Us', 'about-us', '<p><strong><img src="../kcfinder/upload/image/logo-asimetris.png" alt="" width="231" height="77" /></strong></p>\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>Philosophy</strong></p>\r\n<p><strong>C</strong>are for all customers, Courteous at the time and clean behavior</p>\r\n<p><strong>H</strong>elpful and hard working</p>\r\n<p><strong>A</strong>cceptable, encourage initiative and creativly</p>\r\n<p><strong>R</strong>esponsibility, respect and integrated</p>\r\n<p><strong>M</strong>otivate, Promote and Demonstrate Pride of Company</p>\r\n<p>&nbsp;</p>\r\n<p><strong>Commitment</strong></p>\r\n<p>Our commitment is a produce quality products to the satisfaction of our customers, and to the requirements of customers. Because customer requirements are our primary concern, We value every input. With our high commitment to quality control, We guarantee the satisfaction of our customers. This is line with our <strong>motto "Touch of Luxury"</strong>. Where it can only be achieved if we practice and keep improving good management system that involve all our workforce in company operation network.</p>\r\n<p>&nbsp;</p>\r\n<p><img src="../kcfinder/upload/image/asimetris.jpg" alt="" width="1080" height="764" /></p>\r\n<p>&nbsp;</p>\r\n<p><img src="../kcfinder/upload/image/asimteris2.jpg" alt="" width="1080" height="764" /></p>\r\n<p><img src="../kcfinder/upload/image/asimetris4.jpg" alt="" width="1080" height="764" /></p>\r\n<p><img src="../kcfinder/upload/image/asimetris5.jpg" alt="" width="1080" height="764" /></p>', '2016-04-10', '');
+(21, 'Tentang Kami', 'tentang-kami', '<p><span>Rifada Alam Jakarta adalah Jasa tukang taman Jakarta yang hadir bagi anda yang sedang mencari tukang taman profesional di wilayah Jakarta dan sekitarnya. Kami merupakan jasa tukang taman jakarta yang siap memberikan karya terbaik untuk anda, selain pembuatan taman kami juga menerima pembuatan kolam minimalis, lantai carport dan relief serta tebing, untuk melihat hasil karya kami bisa lihat di menu portofolio</span></p>', '2016-04-10', ''),
+(28, 'Landscape', 'landscape', '<div id="primary" class="content-area">\r\n<div class="content-wrap">\r\n<div class="content-wrap-inner">\r\n<div class="entry-content">\r\n<p>Landscape sendiri berarti pemandangan, sedangkan dalam dunia pertamanan landscape taman adalah sebuah lahan yang akan di bangun dan di tata apik dengan bunga-bunga yang memiliki alur menurut konsep taman yang di inginkan dari pemilik itu sendiri atau sesuai dengan denah gambar 3D yang sudah di setujui dari kedua pihak yaitu pihak pelaksana dan owner.</p>\r\n<p>Rifada Alam Jakarta dapat mengerjakan segala bentuk desain taman, yang meliputi:</p>\r\n<ul>\r\n<li>Taman Vertikal</li>\r\n<li>Taman Atap / Roof Garden</li>\r\n<li>Taman Kering</li>\r\n<li>dll</li>\r\n</ul>\r\n<p>Kami dapat mengerjakan taman di seluruh wilayah Jabodetabek yang meliputi Jakarta, Tangerang, Bekasi, dan sekitarnya tanpa kami kenakan biaya untuk survey lokasi.</p>\r\n<p><strong>Untuk informasi pemesanan Jasa Pembuatan Taman silahkan kontak kami di :</strong></p>\r\n<p><strong>Telp/Whatsapp :&nbsp;<a href="tel:082230564685">082230564685</a></strong></p>\r\n<p><strong>Email : admin@rifadaalamjakarta.com</strong></p>\r\n<p><strong>Alamat : Jl. Raya Kembangan Utara No. 57 Jakarta</strong></p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<form class="search-form" action="https://www.rifadaalamjakarta.com/" method="get"><label></label></form>', '2019-05-22', 'tukangtamanjakarta11.jpg'),
+(29, 'Vertikal Garden', 'vertikal-garden', '<p><strong><a href="https://www.rifadaalamjakarta.com/">Rifada Alam Jakarta</a></strong>&nbsp;adalah Jasa Pembuatan Vertikal Garden di Jakarta dan&nbsp;tukang taman jakarta, menerima area Jakarta Barat, Timur, Utara dan selatan, kami membuat dan mendesain Vertikal Garden bisa sesuai dengan permintaan dan kami dapat menyesuaikan dengan desain yang bagus dan minimalis baik untuk rumah, hotel, tempat rekreasi, bahkan taman bermain umum. Untuk info selengkapnya silahkan hubungi kami di :</p>\r\n<p><strong>Telp/Whatsapp :&nbsp;<a href="tel:082230564685">082230564685</a></strong></p>', '2019-05-22', 'vertikalgarden3.jpg'),
+(30, 'Hardscape', 'hardscape', '<div id="primary" class="content-area">\r\n<div class="content-wrap">\r\n<div class="content-wrap-inner">\r\n<div class="entry-content">\r\n<p>Hardscape yaitu adalah material yang penting dalam menghasilkan sebuah taman yang ideal. Taman akan terlihat lebih alami dengan adanya hamparan rumput, &nbsp;namun dengan hardscape ini sangat berfungsi untuk menyeimbangkan dan juga merupakan ornamen penghias. Taman anda akan tampak terlihat lebih bagus, luas, dan berkarakter dengan adanya elemen hardscape tersebut.</p>\r\n<p>Rifada Alam Jakarta akan melengkapi desain landscape taman anda dengan elemen-elemen hardscape antara lain adalah sebagai berikut :</p>\r\n<ul>\r\n<li>Relief</li>\r\n<li>Tebing</li>\r\n<li>Air Terjun</li>\r\n<li>Kolam Minimalis</li>\r\n<li>Lantai Carport</li>\r\n<li>Dll</li>\r\n</ul>\r\n<p>Kami biasa mengerjakan Taman Landscape dan Hardscape di seluruh wilayah Jabodetabek yang meliputi Jakarta, Tangerang, Bekasi, dan sekitarnya tanpa kami kenakan biaya untuk survey lokasi.</p>\r\n<p><strong>Untuk informasi pemesanan Jasa Pembuatan Taman silahkan kontak kami di :</strong></p>\r\n<p><strong>Telp/Whatsapp :&nbsp;<a href="tel:082230564685">082230564685</a></strong></p>\r\n<p><strong>Email : admin@rifadaalamjakarta.com</strong></p>\r\n<p><strong>Alamat : Jl. Raya Kembangan Utara No. 57 Jakarta</strong></p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<form class="search-form" action="https://www.rifadaalamjakarta.com/" method="get"><label></label></form>', '2019-05-22', 'Tebing4.jpg');
 
 -- --------------------------------------------------------
 
@@ -274,14 +207,15 @@ INSERT INTO `halamanstatis` (`id_halaman`, `judul`, `judul_seo`, `isi_halaman`, 
 -- Table structure for table `hubungi`
 --
 
-CREATE TABLE `hubungi` (
-  `id_hubungi` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `hubungi` (
+  `id_hubungi` int(5) NOT NULL AUTO_INCREMENT,
   `nama` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `subjek` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `pesan` text COLLATE latin1_general_ci NOT NULL,
-  `tanggal` date NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `tanggal` date NOT NULL,
+  PRIMARY KEY (`id_hubungi`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `hubungi`
@@ -306,8 +240,8 @@ INSERT INTO `hubungi` (`id_hubungi`, `nama`, `email`, `subjek`, `pesan`, `tangga
 -- Table structure for table `identitas`
 --
 
-CREATE TABLE `identitas` (
-  `id_identitas` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `identitas` (
+  `id_identitas` int(10) NOT NULL AUTO_INCREMENT,
   `nama_website` varchar(100) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -322,8 +256,9 @@ CREATE TABLE `identitas` (
   `youtube` varchar(255) NOT NULL,
   `pin_bb` varchar(50) NOT NULL,
   `whatsapp` varchar(50) NOT NULL,
-  `line` varchar(50) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `line` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_identitas`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `identitas`
@@ -338,12 +273,13 @@ INSERT INTO `identitas` (`id_identitas`, `nama_website`, `alamat`, `email`, `url
 -- Table structure for table `jabatan`
 --
 
-CREATE TABLE `jabatan` (
-  `id_jabatan` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `jabatan` (
+  `id_jabatan` int(5) NOT NULL AUTO_INCREMENT,
   `nama_jabatan` varchar(50) NOT NULL,
   `jabatan_seo` varchar(50) NOT NULL,
-  `aktif` enum('Y','N') NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `aktif` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_jabatan`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `jabatan`
@@ -359,11 +295,12 @@ INSERT INTO `jabatan` (`id_jabatan`, `nama_jabatan`, `jabatan_seo`, `aktif`) VAL
 -- Table structure for table `katajelek`
 --
 
-CREATE TABLE `katajelek` (
-  `id_jelek` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `katajelek` (
+  `id_jelek` int(11) NOT NULL AUTO_INCREMENT,
   `kata` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
-  `ganti` varchar(60) COLLATE latin1_general_ci DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `ganti` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
+  PRIMARY KEY (`id_jelek`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `katajelek`
@@ -379,12 +316,20 @@ INSERT INTO `katajelek` (`id_jelek`, `kata`, `ganti`) VALUES
 -- Table structure for table `kategori`
 --
 
-CREATE TABLE `kategori` (
-  `id_kategori` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `kategori` (
+  `id_kategori` int(5) NOT NULL AUTO_INCREMENT,
   `nama_kategori` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `kategori_seo` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_kategori`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=33 ;
+
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `kategori_seo`, `aktif`) VALUES
+(32, 'Tukang Taman Jakarta', 'tukang-taman-jakarta', 'Y');
 
 -- --------------------------------------------------------
 
@@ -392,16 +337,17 @@ CREATE TABLE `kategori` (
 -- Table structure for table `komentar`
 --
 
-CREATE TABLE `komentar` (
-  `id_komentar` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `komentar` (
+  `id_komentar` int(5) NOT NULL AUTO_INCREMENT,
   `id_berita` int(5) NOT NULL,
   `nama_komentar` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `url` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `isi_komentar` text COLLATE latin1_general_ci NOT NULL,
   `tgl` date NOT NULL,
   `jam_komentar` time NOT NULL,
-  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_komentar`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=73 ;
 
 -- --------------------------------------------------------
 
@@ -409,10 +355,11 @@ CREATE TABLE `komentar` (
 -- Table structure for table `level_user`
 --
 
-CREATE TABLE `level_user` (
-  `id_level` int(5) NOT NULL,
-  `level` varchar(100) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `level_user` (
+  `id_level` int(5) NOT NULL AUTO_INCREMENT,
+  `level` varchar(100) NOT NULL,
+  PRIMARY KEY (`id_level`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `level_user`
@@ -428,13 +375,14 @@ INSERT INTO `level_user` (`id_level`, `level`) VALUES
 -- Table structure for table `menu`
 --
 
-CREATE TABLE `menu` (
-  `id_menu` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `menu` (
+  `id_menu` int(5) NOT NULL AUTO_INCREMENT,
   `id_parent` int(5) NOT NULL DEFAULT '0',
   `nama_menu` varchar(30) NOT NULL,
   `link` varchar(100) NOT NULL,
-  `aktif` enum('Y','N') NOT NULL DEFAULT 'Y'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `aktif` enum('Y','N') NOT NULL DEFAULT 'Y',
+  PRIMARY KEY (`id_menu`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
 
 --
 -- Dumping data for table `menu`
@@ -444,17 +392,16 @@ INSERT INTO `menu` (`id_menu`, `id_parent`, `nama_menu`, `link`, `aktif`) VALUES
 (1, 0, 'Home', 'home', 'Y'),
 (2, 0, 'Profile', '#', 'Y'),
 (21, 0, 'Events', 'all-events.html', 'Y'),
-(41, 0, 'Career', '#', 'Y'),
+(41, 0, '', '#', 'Y'),
 (19, 0, 'News', 'all-news.html', 'Y'),
-(15, 0, 'Services', '#', 'Y'),
-(36, 15, 'Desain Interior', 'page-25-desain-interior.html', 'Y'),
+(15, 0, 'Layanan Kami', '#', 'Y'),
 (23, 0, 'Contact', 'contact-us.html', 'Y'),
-(35, 15, 'Exhibition Contractor', 'page-24-exhibition-contractor.html', 'Y'),
-(34, 15, 'Desain Booth', 'page-23-desain-booth.html', 'Y'),
-(31, 2, 'Vision and Mission', 'page-22-vision-dan-mission.html', 'Y'),
-(30, 2, 'About Us', 'page-21-about-us.html', 'Y'),
+(43, 15, 'Vertical Garden', 'page-29-vertikal-garden.html	', 'Y'),
+(44, 15, 'Hardscape', 'page-30-hardscape.html	', 'Y'),
+(31, 2, 'Vision and Mission', 'page-22-vision-dan-mission.html', 'N'),
+(30, 2, 'Tentang Kami', 'page-21-tentang-kami.html', 'Y'),
 (29, 28, 'Service in The Class', 'serviceintheclass.html', 'Y'),
-(38, 15, 'Desain Eksterior', 'page-26-desain-eksterior.html', 'Y');
+(42, 15, 'Landscape', 'page-28-landscape.html	', 'Y');
 
 -- --------------------------------------------------------
 
@@ -462,8 +409,8 @@ INSERT INTO `menu` (`id_menu`, `id_parent`, `nama_menu`, `link`, `aktif`) VALUES
 -- Table structure for table `modul`
 --
 
-CREATE TABLE `modul` (
-  `id_modul` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `modul` (
+  `id_modul` int(5) NOT NULL AUTO_INCREMENT,
   `nama_modul` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `link` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `static_content` text COLLATE latin1_general_ci NOT NULL,
@@ -472,8 +419,9 @@ CREATE TABLE `modul` (
   `status` enum('user','admin') COLLATE latin1_general_ci NOT NULL,
   `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'Y',
   `urutan` int(5) NOT NULL,
-  `link_seo` varchar(50) COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `link_seo` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_modul`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=66 ;
 
 --
 -- Dumping data for table `modul`
@@ -520,13 +468,14 @@ INSERT INTO `modul` (`id_modul`, `nama_modul`, `link`, `static_content`, `gambar
 -- Table structure for table `poling`
 --
 
-CREATE TABLE `poling` (
-  `id_poling` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `poling` (
+  `id_poling` int(5) NOT NULL AUTO_INCREMENT,
   `pilihan` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `status` varchar(20) COLLATE latin1_general_ci NOT NULL,
   `rating` int(5) NOT NULL DEFAULT '0',
-  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_poling`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `poling`
@@ -545,13 +494,14 @@ INSERT INTO `poling` (`id_poling`, `pilihan`, `status`, `rating`, `aktif`) VALUE
 -- Table structure for table `portofolio`
 --
 
-CREATE TABLE `portofolio` (
-  `id_portofolio` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `portofolio` (
+  `id_portofolio` int(5) NOT NULL AUTO_INCREMENT,
   `nama_portofolio` varchar(255) NOT NULL,
   `portofolio_seo` varchar(100) NOT NULL,
   `alamat_portofolio` varchar(255) NOT NULL,
-  `foto_portofolio` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `foto_portofolio` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_portofolio`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `portofolio`
@@ -568,12 +518,13 @@ INSERT INTO `portofolio` (`id_portofolio`, `nama_portofolio`, `portofolio_seo`, 
 -- Table structure for table `sekilasinfo`
 --
 
-CREATE TABLE `sekilasinfo` (
-  `id_sekilas` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `sekilasinfo` (
+  `id_sekilas` int(5) NOT NULL AUTO_INCREMENT,
   `info` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `tgl_posting` date NOT NULL,
-  `gambar` varchar(100) COLLATE latin1_general_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `gambar` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id_sekilas`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `sekilasinfo`
@@ -592,8 +543,8 @@ INSERT INTO `sekilasinfo` (`id_sekilas`, `info`, `tgl_posting`, `gambar`) VALUES
 -- Table structure for table `staff`
 --
 
-CREATE TABLE `staff` (
-  `id_staff` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `staff` (
+  `id_staff` int(5) NOT NULL AUTO_INCREMENT,
   `id_jabatan` int(5) NOT NULL,
   `nama_staff` varchar(100) NOT NULL,
   `staff_seo` varchar(100) NOT NULL,
@@ -601,8 +552,9 @@ CREATE TABLE `staff` (
   `gbr_staff` varchar(100) NOT NULL,
   `facebook` varchar(255) NOT NULL,
   `twitter` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `email` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_staff`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `staff`
@@ -618,7 +570,7 @@ INSERT INTO `staff` (`id_staff`, `id_jabatan`, `nama_staff`, `staff_seo`, `keter
 -- Table structure for table `statistik`
 --
 
-CREATE TABLE `statistik` (
+CREATE TABLE IF NOT EXISTS `statistik` (
   `ip` varchar(20) NOT NULL DEFAULT '',
   `tanggal` date NOT NULL,
   `hits` int(10) NOT NULL DEFAULT '1',
@@ -5415,7 +5367,7 @@ INSERT INTO `statistik` (`ip`, `tanggal`, `hits`, `online`) VALUES
 ('157.55.39.99', '2019-05-21', 1, '1558447875'),
 ('66.249.71.131', '2019-05-22', 1, '1558478096'),
 ('180.76.15.25', '2019-05-22', 1, '1558484878'),
-('::1', '2019-05-22', 67, '1558496832');
+('::1', '2019-05-22', 292, '1558537624');
 
 -- --------------------------------------------------------
 
@@ -5423,12 +5375,13 @@ INSERT INTO `statistik` (`ip`, `tanggal`, `hits`, `online`) VALUES
 -- Table structure for table `tag`
 --
 
-CREATE TABLE `tag` (
-  `id_tag` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `tag` (
+  `id_tag` int(5) NOT NULL AUTO_INCREMENT,
   `nama_tag` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `tag_seo` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `count` int(5) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `count` int(5) NOT NULL,
+  PRIMARY KEY (`id_tag`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=22 ;
 
 -- --------------------------------------------------------
 
@@ -5436,13 +5389,14 @@ CREATE TABLE `tag` (
 -- Table structure for table `templates`
 --
 
-CREATE TABLE `templates` (
-  `id_templates` int(5) NOT NULL,
+CREATE TABLE IF NOT EXISTS `templates` (
+  `id_templates` int(5) NOT NULL AUTO_INCREMENT,
   `judul` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `pembuat` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `folder` varchar(50) COLLATE latin1_general_ci NOT NULL,
-  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'N'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+  `aktif` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'N',
+  PRIMARY KEY (`id_templates`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `templates`
@@ -5457,7 +5411,7 @@ INSERT INTO `templates` (`id_templates`, `judul`, `pembuat`, `folder`, `aktif`) 
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `password` varchar(50) COLLATE latin1_general_ci NOT NULL,
   `nama_lengkap` varchar(100) COLLATE latin1_general_ci NOT NULL,
@@ -5465,7 +5419,8 @@ CREATE TABLE `users` (
   `no_telp` varchar(20) COLLATE latin1_general_ci NOT NULL,
   `level` varchar(20) COLLATE latin1_general_ci NOT NULL DEFAULT 'user',
   `blokir` enum('Y','N') COLLATE latin1_general_ci NOT NULL DEFAULT 'N',
-  `id_session` varchar(100) COLLATE latin1_general_ci NOT NULL
+  `id_session` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`username`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
@@ -5475,262 +5430,6 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`username`, `password`, `nama_lengkap`, `email`, `no_telp`, `level`, `blokir`, `id_session`) VALUES
 ('admin', '97565c582845c569411a31b86c4cbdf2', 'Administrator', 'sayangschool@gmail.com', '085748117547', 'admin', 'N', '2d5trogc2v4pc7ijgmme54t4l4');
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `agenda`
---
-ALTER TABLE `agenda`
-  ADD PRIMARY KEY (`id_agenda`);
-
---
--- Indexes for table `album`
---
-ALTER TABLE `album`
-  ADD PRIMARY KEY (`id_album`);
-
---
--- Indexes for table `banner`
---
-ALTER TABLE `banner`
-  ADD PRIMARY KEY (`id_banner`);
-
---
--- Indexes for table `berita`
---
-ALTER TABLE `berita`
-  ADD PRIMARY KEY (`id_berita`);
-
---
--- Indexes for table `download`
---
-ALTER TABLE `download`
-  ADD PRIMARY KEY (`id_download`);
-
---
--- Indexes for table `gallery`
---
-ALTER TABLE `gallery`
-  ADD PRIMARY KEY (`id_gallery`);
-
---
--- Indexes for table `halamanstatis`
---
-ALTER TABLE `halamanstatis`
-  ADD PRIMARY KEY (`id_halaman`);
-
---
--- Indexes for table `hubungi`
---
-ALTER TABLE `hubungi`
-  ADD PRIMARY KEY (`id_hubungi`);
-
---
--- Indexes for table `identitas`
---
-ALTER TABLE `identitas`
-  ADD PRIMARY KEY (`id_identitas`);
-
---
--- Indexes for table `jabatan`
---
-ALTER TABLE `jabatan`
-  ADD PRIMARY KEY (`id_jabatan`);
-
---
--- Indexes for table `katajelek`
---
-ALTER TABLE `katajelek`
-  ADD PRIMARY KEY (`id_jelek`);
-
---
--- Indexes for table `kategori`
---
-ALTER TABLE `kategori`
-  ADD PRIMARY KEY (`id_kategori`);
-
---
--- Indexes for table `komentar`
---
-ALTER TABLE `komentar`
-  ADD PRIMARY KEY (`id_komentar`);
-
---
--- Indexes for table `level_user`
---
-ALTER TABLE `level_user`
-  ADD PRIMARY KEY (`id_level`);
-
---
--- Indexes for table `menu`
---
-ALTER TABLE `menu`
-  ADD PRIMARY KEY (`id_menu`);
-
---
--- Indexes for table `modul`
---
-ALTER TABLE `modul`
-  ADD PRIMARY KEY (`id_modul`);
-
---
--- Indexes for table `poling`
---
-ALTER TABLE `poling`
-  ADD PRIMARY KEY (`id_poling`);
-
---
--- Indexes for table `portofolio`
---
-ALTER TABLE `portofolio`
-  ADD PRIMARY KEY (`id_portofolio`);
-
---
--- Indexes for table `sekilasinfo`
---
-ALTER TABLE `sekilasinfo`
-  ADD PRIMARY KEY (`id_sekilas`);
-
---
--- Indexes for table `staff`
---
-ALTER TABLE `staff`
-  ADD PRIMARY KEY (`id_staff`);
-
---
--- Indexes for table `tag`
---
-ALTER TABLE `tag`
-  ADD PRIMARY KEY (`id_tag`);
-
---
--- Indexes for table `templates`
---
-ALTER TABLE `templates`
-  ADD PRIMARY KEY (`id_templates`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `agenda`
---
-ALTER TABLE `agenda`
-  MODIFY `id_agenda` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
---
--- AUTO_INCREMENT for table `album`
---
-ALTER TABLE `album`
-  MODIFY `id_album` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
---
--- AUTO_INCREMENT for table `banner`
---
-ALTER TABLE `banner`
-  MODIFY `id_banner` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT for table `berita`
---
-ALTER TABLE `berita`
-  MODIFY `id_berita` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
---
--- AUTO_INCREMENT for table `download`
---
-ALTER TABLE `download`
-  MODIFY `id_download` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT for table `gallery`
---
-ALTER TABLE `gallery`
-  MODIFY `id_gallery` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
---
--- AUTO_INCREMENT for table `halamanstatis`
---
-ALTER TABLE `halamanstatis`
-  MODIFY `id_halaman` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
---
--- AUTO_INCREMENT for table `hubungi`
---
-ALTER TABLE `hubungi`
-  MODIFY `id_hubungi` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
---
--- AUTO_INCREMENT for table `identitas`
---
-ALTER TABLE `identitas`
-  MODIFY `id_identitas` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
---
--- AUTO_INCREMENT for table `jabatan`
---
-ALTER TABLE `jabatan`
-  MODIFY `id_jabatan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `katajelek`
---
-ALTER TABLE `katajelek`
-  MODIFY `id_jelek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `kategori`
---
-ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
---
--- AUTO_INCREMENT for table `komentar`
---
-ALTER TABLE `komentar`
-  MODIFY `id_komentar` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
---
--- AUTO_INCREMENT for table `level_user`
---
-ALTER TABLE `level_user`
-  MODIFY `id_level` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT for table `menu`
---
-ALTER TABLE `menu`
-  MODIFY `id_menu` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
---
--- AUTO_INCREMENT for table `modul`
---
-ALTER TABLE `modul`
-  MODIFY `id_modul` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
---
--- AUTO_INCREMENT for table `poling`
---
-ALTER TABLE `poling`
-  MODIFY `id_poling` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
---
--- AUTO_INCREMENT for table `portofolio`
---
-ALTER TABLE `portofolio`
-  MODIFY `id_portofolio` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `sekilasinfo`
---
-ALTER TABLE `sekilasinfo`
-  MODIFY `id_sekilas` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
---
--- AUTO_INCREMENT for table `staff`
---
-ALTER TABLE `staff`
-  MODIFY `id_staff` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
--- AUTO_INCREMENT for table `tag`
---
-ALTER TABLE `tag`
-  MODIFY `id_tag` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
---
--- AUTO_INCREMENT for table `templates`
---
-ALTER TABLE `templates`
-  MODIFY `id_templates` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
