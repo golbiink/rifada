@@ -1,0 +1,31 @@
+[17-Apr-2016 18:01:12 Asia/Jakarta] PHP Warning:  unlink(../../../img_galeri/): Is a directory in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 21
+[17-Apr-2016 18:01:12 Asia/Jakarta] PHP Warning:  unlink(../../../img_galeri/): Is a directory in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 22
+[17-Apr-2016 18:01:12 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php:21) in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 27
+[18-Apr-2016 08:59:53 Asia/Jakarta] PHP Warning:  unlink(../../../img_galeri/): Is a directory in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 21
+[18-Apr-2016 08:59:53 Asia/Jakarta] PHP Warning:  unlink(../../../img_galeri/): Is a directory in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 22
+[18-Apr-2016 08:59:53 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php:21) in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 27
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpnBSLo0' to '../../../img_galeri/714079IMG-20161101-WA0002.jpg' in /home/asimetris/public_html/config/fungsi_thumb.php on line 124
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Premature end of JPEG file
+ in /home/asimetris/public_html/config/fungsi_thumb.php on line 127
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagecreatefromjpeg(): '../../../img_galeri/714079IMG-20161101-WA0002.jpg' is not a valid JPEG file in /home/asimetris/public_html/config/fungsi_thumb.php on line 127
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagesx() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 128
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagesy() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 129
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  Division by zero in /home/asimetris/public_html/config/fungsi_thumb.php on line 134
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /home/asimetris/public_html/config/fungsi_thumb.php on line 137
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 138
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagejpeg() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 141
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 144
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/asimetris/public_html/config/fungsi_thumb.php on line 145
+[02-Nov-2016 13:18:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/asimetris/public_html/config/fungsi_thumb.php:124) in /home/asimetris/public_html/backside/modul/mod_galerifoto/aksi_galerifoto.php on line 106
+[14-Mar-2018 09:40:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/pramanab/asimetris.net/config/koneksi.php on line 8
+[23-Mar-2019 06:33:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:35:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:43:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:43:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:49:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:51:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 07:52:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 07:52:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 07:52:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 07:53:21 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 07:54:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8

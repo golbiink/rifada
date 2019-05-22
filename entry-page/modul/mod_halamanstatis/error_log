@@ -1,0 +1,4 @@
+[14-Mar-2018 09:37:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/pramanab/asimetris.net/config/koneksi.php on line 8
+[14-Mar-2018 16:37:34 Asia/Jakarta] PHP Notice:  Use of undefined constant judul - assumed 'judul' in /home/pramanab/asimetris.net/backside/modul/mod_halamanstatis/aksi_halamanstatis.php on line 77
+[14-Mar-2018 09:39:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/pramanab/asimetris.net/config/koneksi.php on line 8
+[14-Mar-2018 16:39:15 Asia/Jakarta] PHP Notice:  Use of undefined constant judul - assumed 'judul' in /home/pramanab/asimetris.net/backside/modul/mod_halamanstatis/aksi_halamanstatis.php on line 77

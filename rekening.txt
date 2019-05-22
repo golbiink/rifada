@@ -1,0 +1,3 @@
+BANK JATIM a/n cv asimetris 1731000791
+BANK BTN    a/n cv asimetris 0000201501416619
+BANK MANDIRI a/n cv asimetris 1410014232342

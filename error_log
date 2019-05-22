@@ -1,0 +1,409 @@
+
+[17-May-2019 09:40:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:23 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:40:23 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:40:23 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:40:23 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:40:23 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:40:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:40:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:00 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:41:10 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:41:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:41:12 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:41:14 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:41:14 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:41:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:16 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:41:16 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:41:16 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:41:16 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:41:16 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:41:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:22 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:32 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:41:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:00 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:14 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:32 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:42:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:00 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:06 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:14 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:43:14 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:43:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:43:16 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:43:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:43:18 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[17-May-2019 09:43:21 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:22 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:32 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:43:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:47:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 09:47:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:47:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:47:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:47:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:47:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 09:48:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 10:02:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 11:34:22 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:47:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 16:47:11 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 16:47:11 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 16:47:11 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 16:47:11 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 16:47:11 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 16:47:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 20:23:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 20:48:22 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 20:48:22 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 20:48:22 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 20:48:22 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 20:48:22 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 20:48:22 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 20:48:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 21:15:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 21:15:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 21:15:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 21:15:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 21:15:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 21:15:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[17-May-2019 21:15:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[17-May-2019 22:44:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 00:35:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 00:35:33 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 00:35:33 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 00:35:33 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 00:35:33 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 00:35:33 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 00:35:55 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 02:08:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 03:04:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 10:04:54 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[18-May-2019 06:36:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 06:36:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 06:36:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 06:36:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 06:36:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 06:36:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 06:36:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 09:14:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 09:14:08 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 09:14:08 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 09:14:08 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 09:14:08 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 09:14:08 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 09:14:39 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 17:46:32 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 17:46:32 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 17:46:32 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 17:46:32 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 17:46:32 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 17:46:32 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 17:46:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 17:53:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 17:54:25 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 19:46:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 19:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 19:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 19:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 19:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 19:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 19:46:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 21:25:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[18-May-2019 21:25:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 21:25:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 21:25:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 21:25:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 21:25:28 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[18-May-2019 21:26:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 02:46:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 02:46:40 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 02:46:40 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 02:46:40 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 02:46:40 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 02:46:40 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 02:46:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 08:03:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 08:03:44 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 08:03:44 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 08:03:44 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 08:03:44 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 08:03:44 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 08:03:51 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:02:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:02:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:02:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:02:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:02:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:02:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:02:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:11:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:11:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:11:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:11:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:11:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:11:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:12:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:40:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:40:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:40:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:40:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:40:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:40:43 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:41:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:41:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 10:41:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:41:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:41:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:41:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:41:56 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 10:42:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 11:11:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 14:11:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 21:11:37 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[19-May-2019 14:56:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 14:56:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 14:56:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 14:56:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 14:56:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 14:56:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 14:56:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 17:21:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 17:21:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 17:21:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 17:21:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 17:21:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 17:21:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 17:21:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 18:39:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 18:39:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 18:39:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 18:39:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 18:39:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 18:39:01 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 18:39:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 20:39:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[19-May-2019 20:39:20 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 20:39:20 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 20:39:20 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 20:39:20 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 20:39:20 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[19-May-2019 20:41:50 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:05:55 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:05:55 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:05:55 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:05:55 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:05:55 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:05:55 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:05:55 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:06:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:07:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:07:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:07:31 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:07:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:07:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:08:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:08:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:09:00 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:18:21 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 01:18:21 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:18:21 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:18:21 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:18:21 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:18:21 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 01:18:21 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 02:41:39 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 04:27:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 04:27:24 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 04:27:24 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 04:27:24 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 04:27:24 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 04:27:24 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 04:27:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 04:30:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 04:30:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 05:27:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 06:39:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 10:25:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 11:38:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 12:22:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 12:22:09 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 12:22:09 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 12:22:09 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 12:22:09 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 12:22:09 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 12:22:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 17:25:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 17:25:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 17:25:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 17:25:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 17:25:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 17:25:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 17:25:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 17:42:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 20:39:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 20:39:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 20:39:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 20:39:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 20:39:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 20:39:07 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 20:39:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 22:20:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 05:20:28 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[20-May-2019 23:27:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 23:27:12 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 23:27:12 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 23:27:12 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 23:27:12 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 23:27:12 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[20-May-2019 23:27:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[20-May-2019 23:38:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 06:38:42 Asia/Jakarta] PHP Notice:  Undefined index: tanggal in /home/asimetri/public_html/templates/asimetris/kiri.php on line 1026
+[21-May-2019 03:01:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 03:01:38 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 03:01:38 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 03:01:38 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 03:01:38 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 03:01:38 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 03:01:38 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 08:55:51 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 10:42:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 11:38:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 11:38:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 11:38:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 11:38:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 11:38:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 11:38:02 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 11:38:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 12:53:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 12:53:54 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 12:53:54 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 12:53:54 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 12:53:54 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 12:53:54 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 12:53:55 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 14:11:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 16:10:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 16:10:04 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 16:10:04 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 16:10:04 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 16:10:04 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 16:10:04 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 22:34:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 23:21:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[21-May-2019 23:21:18 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 23:21:18 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 23:21:18 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 23:21:18 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 23:21:18 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[21-May-2019 23:21:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 00:24:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 00:24:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 00:24:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 00:24:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 00:24:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 00:24:19 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 00:25:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 00:27:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 01:24:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 01:24:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:24:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:24:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:24:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:24:27 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:24:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 01:28:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 01:28:41 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:28:41 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:28:41 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:28:41 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:28:41 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 01:29:10 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 02:46:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 02:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:46:57 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:46:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 02:47:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[22-May-2019 02:47:15 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:47:15 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:47:15 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:47:15 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:47:15 UTC] PHP Notice:  Use of undefined constant isi_berita - assumed 'isi_berita' in /home/asimetri/public_html/rss.php on line 17
+[22-May-2019 02:47:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8

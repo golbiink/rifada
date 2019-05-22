@@ -1,0 +1,8 @@
+[14-Mar-2018 09:40:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/pramanab/asimetris.net/config/koneksi.php on line 8
+[23-Mar-2019 06:34:22 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:35:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:38:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:39:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:40:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:40:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8
+[23-Mar-2019 06:41:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/asimetri/public_html/config/koneksi.php on line 8

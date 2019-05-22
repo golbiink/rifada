@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+	<title>Mustache: Dashboard</title>
+	
+<style type="text/css">
+		@import url("css/style.css");
+		@import url("css/forms.css");
+		@import url("css/forms-btn.css");
+		@import url("css/menu.css");
+		@import url('css/style_text.css');
+		@import url("css/datatables.css");
+		@import url("css/fullcalendar.css");
+		@import url("css/pirebox.css");
+		@import url("css/modalwindow.css");
+		@import url("css/statics.css");
+		@import url("css/tabs-toggle.css");
+		@import url("css/system-message.css");
+		@import url("css/tooltip.css");
+		@import url("css/wizard.css");
+		@import url("css/wysiwyg.css");
+		@import url("css/wysiwyg.modal.css");
+		@import url("css/wysiwyg-editor.css");
+</style>
+	
+	<!--[if lte IE 8]>
+		<script type="text/javascript" src="js/excanvas.min.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.1.8.17.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.select.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.spinner.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/supersubs.js"></script>
+	<script type="text/javascript" src="js/jquery.datatables.js"></script>
+	<script type="text/javascript" src="js/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smartwizard-2.0.min.js"></script>
+	<script type="text/javascript" src="js/pirobox.extended.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+	<script type="text/javascript" src="js/jquery.elastic.source.js"></script>
+	<script type="text/javascript" src="js/jquery.customInput.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery.metadata.js"></script>
+	<script type="text/javascript" src="js/jquery.filestyle.mini.js"></script>
+	<script type="text/javascript" src="js/jquery.filter.input.js"></script>
+	<script type="text/javascript" src="js/jquery.flot.js"></script>
+	<script type="text/javascript" src="js/jquery.flot.pie.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
+	<script type="text/javascript" src="js/jquery.graphtable-0.2.js"></script>
+	<script type="text/javascript" src="js/jquery.wysiwyg.js"></script>
+	<script type="text/javascript" src="js/controls/wysiwyg.image.js"></script>
+	<script type="text/javascript" src="js/controls/wysiwyg.link.js"></script>
+	<script type="text/javascript" src="js/controls/wysiwyg.table.js"></script>
+	<script type="text/javascript" src="js/plugins/wysiwyg.rmFormat.js"></script>
+	<script type="text/javascript" src="js/costum.js"></script>
+	
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="container">
+	
+		<div class="hide-btn top"></div>
+		<div class="hide-btn center"></div>
+		<div class="hide-btn bottom"></div>
+		
+		<div id="top">
+			<h1 id="logo"><a href="./"></a></h1>
+			<div id="labels">
+				<ul>
+					<li><a href="#" class="user"><span class="bar">Welcome John Do</span></a></li>
+					<li><a href="#" class="settings"></a></li>
+					<li class="subnav">
+						<a href="#" class="messages"></a>
+						<ul>
+							<li><a href="#">New message</a></li>
+							<li><a href="#">Inbox</a></li>
+							<li><a href="#">Outbox</a></li>
+							<li><a href="#">Trash</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="logout"></a></li>
+				</ul>
+			</div>
+			<div id="menu">
+				<ul> 
+					<li><a href="dashboard.html">Dashboard</a></li> 
+					<li><a href="forms.html">Forms</a> </li> 
+					<li>
+						<a href="tables.html">Tables</a>
+						<ul> 
+							<li><a href="#">First item</a></li>
+							<li class="current">
+								<a href="#">Second item</a>
+								<ul> 
+									<li><a href="#">First item</a></li>
+									<li class="current"><a href="#">Second item</a></li>
+									<li><a href="#">Third item</a></li>
+									<li><a href="#">Fourth item</a></li>
+								</ul> 
+							</li>
+							<li><a href="#">Third item</a></li>
+							<li><a href="#">Fourth item</a></li>
+						</ul>
+					</li>
+					<li><a href="charts.html">Charts</a></li>
+					<li><a href="uielements.html">UI Elements</a></li>
+					<li><a href="typography.html">Typography</a></li>
+					<li class="current"><a href="gallery.html">Gallery</a></li>
+					<li><a href="boxgrid.html">Boxgrid</a></li>
+					<li><a href="icons.html">Icons</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="left">
+			<div class="box search">
+				<div class="content">
+					<form action="">
+						<input type="text" value="" placeholder="Search" />
+						<button type="submit"></button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="box submenu">
+				<div class="content">
+					<ul>
+						<li><a href="#">First item</a></li>
+						<li class="current">
+							<a href="#">Second item</a>
+							<ul>
+								<li><a href="#">First item</a></li>
+								<li class="current"><a href="#">Second item</a></li>
+								<li><a href="#">Third item</a></li>
+								<li><a href="#">Fourth item</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Third item</a></li>
+						<li><a href="#">Fourth item</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="box statics">
+				<div class="content">
+					<ul>
+						<li><h2>Statistics</h2></li>
+						<li>Total pages <div class="info red"><span>999</span></div></li>
+						<li>Comments <div class="info blue"><span>654</span></div></li>
+						<li>Users <div class="info green"><span>7</span></div></li>
+						<li>Last update <div class="info black"><span>01.20.2012</span></div></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="box togglemenu">
+				<div class="content">
+					<ul>
+						<li><h2>Toggle Menu</h2></li>
+						<li class="title">Toggle item 01</li>
+						<li class="content">
+							Aenean vulputate condime pellent
+							que. Sed ornare semper purus
+							sollicitudin. Vivamus nisi dui,
+							pharetra ac condimentum id.
+						</li>
+						<li class="title">Toggle item 02</li>
+						<li class="content">
+							Aenean vulputate condime pellent
+							que. Sed ornare semper purus
+							sollicitudin. Vivamus nisi dui,
+							pharetra ac condimentum id.
+						</li>
+						<li class="title">Toggle item 03</li>
+						<li class="content">
+							Aenean vulputate condime pellent
+							que. Sed ornare semper purus
+							sollicitudin. Vivamus nisi dui,
+							pharetra ac condimentum id.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id="right">
+
+			<div class="section">
+				<div class="box">
+					<div class="title">
+						Gallery
+						<span class="hide"></span>
+					</div>
+					<div class="content nopadding">
+					
+						<div class="gallery">
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+							
+							<div class="thumb">
+								<div class="hover"><a href="#"></a></div>
+								<a href="#" class="pirobox" rel="single" title=""><img src="gfx/photo.jpg" alt="Photo" /></a>
+							</div>
+						</div>
+						
+						<div class="pager">
+							Pages: 
+							<a href="#" class="current">01</a>
+							<a href="#">02</a>
+							<a href="#">03</a>
+							<a href="#">04</a>
+							<a href="#">05</a>
+							<a href="#">06</a>
+							<a href="#">07</a>
+							<a href="#">08</a>
+							<a href="#">09</a>
+							<a href="#">10</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+</body>
+
+</html> 
