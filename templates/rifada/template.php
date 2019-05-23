@@ -224,7 +224,7 @@
                                     ?>
                                     <li><a href="<?php echo "$social[facebook]" ?>" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="https://twitter.com/<?php echo "$social[twitter]" ?>" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    <li><a href="https://www.instagram.com/asimetrissby/" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                    <li><a href="https://www.instagram.com/" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
                                     </li>
                                 </ul>
                             <?php

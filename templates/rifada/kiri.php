@@ -79,7 +79,7 @@ if ($_GET['module'] == 'home') {
 
                 </div>
                 <div class="box-bottom">
-                  <a href="page-23-desain-booth.html">Selengkapnya</a>
+                  <a href="news-139-tukang-taman-jakarta.html">Selengkapnya</a>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ if ($_GET['module'] == 'home') {
 
                 </div>
                 <div class="box-bottom">
-                  <a href="page-24-exhibition-contractor.html">Selengkapnya</a>
+                  <a href="page-29-vertikal-garden.html">Selengkapnya</a>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@ if ($_GET['module'] == 'home') {
 
                 </div>
                 <div class="box-bottom">
-                  <a href="page-25-desain-interior.html">Selengkapnya</a>
+                  <a href="page-28-landscape.html">Selengkapnya</a>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ if ($_GET['module'] == 'home') {
 
                 </div>
                 <div class="box-bottom">
-                  <a href="page-26-desain-eksterior.html">Selengkapnya</a>
+                  <a href="page-30-hardscape.html">Selengkapnya</a>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ if ($_GET['module'] == 'home') {
       <!-- Portfolio Projects -->
       <div class="row">
         <div class="col-lg-12">
-          <h4 class="heading">Portofolio</h4>
+          <h4 class="heading">Galeri</h4>
           <div class="row">
             <section id="projects">
               <ul id="thumbs" class="portfolio">
@@ -323,31 +323,7 @@ elseif ($_GET['module'] == 'halamanstatis') {
           ?>
         </ul>
       </div>
-      <div class='widget'>
-        <h5 class='widgetheading'>Twitter</h5>
-        <ul class='tags'>
-          <?php
-          $main = mysql_query("SELECT * FROM identitas ");
-          while ($sosmed = mysql_fetch_array($main))
-            $fb = $sosmed['facebook'];
-          $tw = $sosmed['twitter'];
-          ?>
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-          <script>
-            ! function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? 'http' : 'https';
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, "script", "twitter-wjs");
-          </script>
-
-        </ul>
-      </div>
+      
     </aside>
   </div>
   </div>
@@ -488,30 +464,7 @@ echo "<div id='pagination'>
           ?>
         </ul>
       </div>
-      <div class='widget'>
-        <h5 class='widgetheading'>Twitter</h5>
-        <ul class='tags'>
-          <?php
-          $main = mysql_query("SELECT * FROM identitas ");
-          while ($sosmed = mysql_fetch_array($main))
-            $fb = $sosmed['facebook'];
-          $tw = $sosmed['twitter'];
-          ?>
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-          <script>
-            ! function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? 'http' : 'https';
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, "script", "twitter-wjs");
-          </script>
-        </ul>
-      </div>
+      
     </aside>
   </div>
   </div>
@@ -625,30 +578,7 @@ echo "<div id='pagination'>
                 ?>
               </ul>
             </div>
-            <div class='widget'>
-              <h5 class='widgetheading'>Twitter</h5>
-              <ul class='tags'>
-                <?php
-                $main = mysql_query("SELECT * FROM identitas ");
-                while ($sosmed = mysql_fetch_array($main))
-                  $fb = $sosmed['facebook'];
-                $tw = $sosmed['twitter'];
-                ?>
-                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-                <script>
-                  ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                      p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = p + "://platform.twitter.com/widgets.js";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }
-                  }(document, "script", "twitter-wjs");
-                </script>
-              </ul>
-            </div>
+           
           </aside>
         </div>
       </div>
@@ -792,30 +722,7 @@ elseif ($_GET['module'] == 'detailkategori') {
             ?>
           </ul>
         </div>
-        <div class='widget'>
-          <h5 class='widgetheading'>Twitter</h5>
-          <ul class='tags'>
-            <?php
-            $main = mysql_query("SELECT * FROM identitas ");
-            while ($sosmed = mysql_fetch_array($main))
-              $fb = $sosmed['facebook'];
-            $tw = $sosmed['twitter'];
-            ?>
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-            <script>
-              ! function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                  p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                  js = d.createElement(s);
-                  js.id = id;
-                  js.src = p + "://platform.twitter.com/widgets.js";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }
-              }(document, "script", "twitter-wjs");
-            </script>
-          </ul>
-        </div>
+        
       </aside>
     </div>
     </div>
@@ -884,30 +791,7 @@ elseif ($_GET['module'] == 'detailkategori') {
             ?>
           </ul>
         </div>
-        <div class='widget'>
-          <h5 class='widgetheading'>Twitter</h5>
-          <ul class='tags'>
-            <?php
-            $main = mysql_query("SELECT * FROM identitas ");
-            while ($sosmed = mysql_fetch_array($main))
-              $fb = $sosmed['facebook'];
-            $tw = $sosmed['twitter'];
-            ?>
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-            <script>
-              ! function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0],
-                  p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                  js = d.createElement(s);
-                  js.id = id;
-                  js.src = p + "://platform.twitter.com/widgets.js";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }
-              }(document, "script", "twitter-wjs");
-            </script>
-          </ul>
-        </div>
+       
       </aside>
     </div>
     </div>
@@ -1064,30 +948,7 @@ echo "<div id='pagination'>
           ?>
         </ul>
       </div>
-      <div class='widget'>
-        <h5 class='widgetheading'>Twitter</h5>
-        <ul class='tags'>
-          <?php
-          $main = mysql_query("SELECT * FROM identitas ");
-          while ($sosmed = mysql_fetch_array($main))
-            $fb = $sosmed['facebook'];
-          $tw = $sosmed['twitter'];
-          ?>
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-          <script>
-            ! function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0],
-                p = /^http:/.test(d.location) ? 'http' : 'https';
-              if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = p + "://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-              }
-            }(document, "script", "twitter-wjs");
-          </script>
-        </ul>
-      </div>
+     
     </aside>
   </div>
   </div>
@@ -1229,30 +1090,7 @@ echo "<div id='pagination'>
                 ?>
               </ul>
             </div>
-            <div class='widget'>
-              <h5 class='widgetheading'>Twitter</h5>
-              <ul class='tags'>
-                <?php
-                $main = mysql_query("SELECT * FROM identitas ");
-                while ($sosmed = mysql_fetch_array($main))
-                  $fb = $sosmed['facebook'];
-                $tw = $sosmed['twitter'];
-                ?>
-                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/asimetrissby9" data-widget-id="721871685972922369">Tweets by @asimetrissby9</a>
-                <script>
-                  ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                      p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                      js = d.createElement(s);
-                      js.id = id;
-                      js.src = p + "://platform.twitter.com/widgets.js";
-                      fjs.parentNode.insertBefore(js, fjs);
-                    }
-                  }(document, "script", "twitter-wjs");
-                </script>
-              </ul>
-            </div>
+           
           </aside>
         </div>
       </div>
